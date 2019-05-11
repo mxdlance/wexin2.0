@@ -23,8 +23,10 @@ public class UnsubscribeEventMessageProcessor implements EventMessageProcessor {
 	
 	
 	@Override
-	@Transactional
+	@Transactional//	// 表示方法要有事务，在事务内调用数据库查询到的对象的set方法，会自动更新到数据库
 	public void onMessage(EventInMessage msg) {
+		if(msg.getEvent().equals("subscribe")) {
+		
 		System.out.println("取消关注消息处理器: " + msg);
 		// 1.解除用户的关注状态
 		User user= this.userRepository.findByOpenId(msg.getFromUserName());
@@ -36,5 +38,5 @@ public class UnsubscribeEventMessageProcessor implements EventMessageProcessor {
 			user.setStatus(User.Status.IS_UNSUBSCRIBE);
 			user.setUnsubTime(new Date());
 		}
-	}
+	}}
 }
