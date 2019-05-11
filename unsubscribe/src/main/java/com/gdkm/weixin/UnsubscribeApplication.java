@@ -28,7 +28,7 @@ import com.gdkm.weixin.processors.EventMessageProcessor;
 
 @SpringBootApplication
 @ComponentScan("com.gdkm")
-public class SubscribeApplication implements CommonsConfig, //
+public class UnsubscribeApplication implements CommonsConfig, //
 // 命令行运行器，表示此程序是一个命令行程序，需要重新run方法来实现程序的初始化。
 // 使用一个线程等待程序的停止通知。
 		CommandLineRunner, //
@@ -38,7 +38,7 @@ public class SubscribeApplication implements CommonsConfig, //
 		ApplicationContextAware//
 {
 
-	private static final Logger LOG = LoggerFactory.getLogger(SubscribeApplication.class);
+	private static final Logger LOG = LoggerFactory.getLogger(UnsubscribeApplication.class);
 
 	private ApplicationContext ctx;
 
@@ -84,7 +84,7 @@ public class SubscribeApplication implements CommonsConfig, //
 
 	public static void main(String[] args) throws InterruptedException {
 
-		SpringApplication.run(SubscribeApplication.class, args);
+		SpringApplication.run(UnsubscribeApplication.class, args);
 		// 为了不让程序直接退出
 //		CountDownLatch countDownLatch = new CountDownLatch(1);
 //		countDownLatch.await();
