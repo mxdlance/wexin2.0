@@ -25,6 +25,9 @@ public class JsonRedisSerializer<T> extends Jackson2JsonRedisSerializer<T> {
 
 	@Override
 	public T deserialize(byte[] bytes) throws SerializationException {
+		if (bytes == null) {
+			return null;
+		}
 		ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
 		DataInputStream in = new DataInputStream(bis);
 		try {
