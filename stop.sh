@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # 停止接入程序
-cd wexin2.0.git
+cd wx
 mvn  spring-boot:stop
 
 # 停止关注程序

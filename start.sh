@@ -4,7 +4,7 @@
 mvn clean install
 
 # 启动接入程序
-cd wexin2.0.git
+cd wx
 mvn  spring-boot:start
 
 # 启动关注程序
