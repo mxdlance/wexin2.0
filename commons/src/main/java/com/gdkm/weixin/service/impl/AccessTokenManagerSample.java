@@ -58,12 +58,15 @@ public class AccessTokenManagerSample implements AccessTokenManager {
 					} finally {
 						// 删除分布式事务锁
 						redisTemplate.delete(key + "_lock");
+						//多线程同步模块  用于通知下面取消等待
 						synchronized (this) {
 							this.notifyAll();
 						}
 					}
 				} else {
 					LOG.trace("没有得到令牌，等待1分钟后重试");
+					
+					///多线程同步模块  用于第一次获取失败后等待一分钟再次调用获取方法
 					synchronized (this) {
 						try {
 							this.wait(60 * 1000);
