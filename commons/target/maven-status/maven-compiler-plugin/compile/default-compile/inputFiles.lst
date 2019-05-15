@@ -1,4 +1,15 @@
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\ResponseError.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\service\impl\AccessTokenManagerSample.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\CommonsConfig.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\repository\UserRepository.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\ResponseToken.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\processors\EventMessageProcessor.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\ResponseMessage.java
 E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\image\ImageInMessage.java
 E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\text\TextInMessage.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\json\JsonRedisSerializer.java
 E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\InMessage.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\service\AccessTokenManager.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\service\WeiXinProxy.java
+E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\User.java
 E:\真学习资料\小程序开发\eclipseWork\weixin\commons\src\main\java\com\gdkm\weixin\domain\event\EventInMessage.java
