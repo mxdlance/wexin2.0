@@ -62,7 +62,7 @@ public class AccessTokenManagerSample implements AccessTokenManager {
 						synchronized (this) {
 							this.notifyAll();
 						}
-					}
+					}break;
 				} else {
 					LOG.trace("没有得到令牌，等待1分钟后重试");
 					
@@ -75,6 +75,8 @@ public class AccessTokenManagerSample implements AccessTokenManager {
 						}
 					}
 				}
+			}if (token == null) {
+				LOG.trace("无法获得令牌");
 			}
 		}
 		return token.getToken();

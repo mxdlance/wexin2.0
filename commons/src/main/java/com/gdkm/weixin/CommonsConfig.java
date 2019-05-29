@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.gdkm.weixin.domain.InMessage;
 import com.gdkm.weixin.json.JsonRedisSerializer;
@@ -29,6 +30,14 @@ public interface CommonsConfig extends
 		XmlMapper mapper = new XmlMapper();
 		return mapper;
 	}
+	
+	@Bean
+	public default ObjectMapper objectMapper() {
+		ObjectMapper mapper = new ObjectMapper();
+		return mapper;
+	}
+	
+	
 
 	@Bean
 	public default RedisTemplate<String, ? extends InMessage> inMessageTemplate(//
