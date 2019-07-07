@@ -12,6 +12,8 @@
 		<module>subscribe</module>
 		<module>unsubscribe</module>
 		<module>self_menu</module>
+		<module>library</module>
+		<module>boot-crm</module>
 	</modules>
 	<!-- 继承Spring Boot的父项目，可以利用Spring Boot的依赖管理功能，减少后面的配置两 -->
 	<parent>
